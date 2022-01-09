@@ -27,7 +27,7 @@ export const query = graphql`
       nodes {
         frontmatter {
         datePublished(formatString: "MMMM D, YYYY")
-          name
+        name
         }
         id
         slug
