@@ -1,0 +1,29 @@
+.container {
+  margin: auto;
+  max-width: 500px;
+  color: "#232129";
+  padding: 96;
+  font-family: "-apple-system, Roboto, sans-serif, serif";
+}
+
+.heading {
+  color: "#663399";
+  marginTop: 0;
+  marginBottom: 64;
+  maxWidth: 320;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  color: "#8954A8";
+  fontWeight: "bold";
+  fontSize: 16;
+  verticalAlign: "5%";
+}
+.nav-link-item {
+  padding-right: 2rem;
+}
+.nav-link-text {
+  color: black;
+}
