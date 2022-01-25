@@ -9,11 +9,19 @@ module.exports = {
             "gatsby-plugin-styled-components",
             "gatsby-plugin-image",
             "gatsby-plugin-sharp",
+            "react-bootstrap", 
             {
               resolve: "gatsby-source-filesystem",
               options: {
                 name: `blog`,
                 path: `${__dirname}/blog`,
+              }
+            },
+            {
+              resolve: "gatsby-source-filesystem",
+              options: {
+                name: `demo`,
+                path: `${__dirname}/demo`,
               }
             },
             "gatsby-plugin-mdx",
