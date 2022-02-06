@@ -1,5 +1,6 @@
 import * as React from "react"
 //import SocialIcons from './SocialIcons'
+import { Logo } from './styles/Header.styled'
 import { Container } from './styles/Container.styled'
 import { Flex } from './styles/Flex.styled'
 import { StyledFooter } from './styles/Footer.styled'
@@ -8,7 +9,7 @@ export default function Footer() {
   return (
     <StyledFooter>
       <Container>
-        <img src='./images/logo_white.svg' alt='' />
+        <Logo src='./images/logo_white.svg' alt='' />
 
         <Flex>
           <ul>

@@ -1,7 +1,7 @@
 import * as React from "react"
-import { Navbar } from 'react-bootstrap'
 import { StyledHeader, Nav, Logo, Image } from './styles/Header.styled'
-import { Container } from './styles/Container.styled'
+import { Link} from './styles/Link.styled'
+import { Container, LeftContainer, RightContainer } from './styles/Container.styled'
 import { Flex } from './styles/Flex.styled'
 import { Button } from './styles/Button.styled'
 
@@ -9,32 +9,42 @@ export default function Header() {
   return (
     <StyledHeader>
       <Container>
-          
+       
         <Nav>
+          <LeftContainer>
           <Logo src='../images/logo.svg' alt='' />
-          <Button>Get in Touch </Button>
+          </LeftContainer>
+          <RightContainer>
+            <ul>
+              <Link href="#">Solutions</Link>
+              </ul>
+              <ul>
+              <Link href="#">Blog</Link>
+              </ul>
+              <ul>
+              <Button>Get in Touch </Button>
+            </ul>
+          </RightContainer>
         </Nav>
             
-
           {/*
-          <Navbar
-            bg="dark"
-            fixed="top"
-          >
-          <style>
-          .navbar-brand img {
-            max-height: 100%;
-          }
-
-              .navbar-brand {
-                height: 100px;
-              }
-          </style>
-          <Navbar.Brand href="#home">
-            <img src='../images/logo.svg'    />
-          </Navbar.Brand>
+          <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+              <Container>
+                  <Navbar.Brand href="#home"  className="img-container">
+                    <img style={{ maxHeight: '300px', maxWidth: '300px'}} src='../images/logo.svg'  />
+                  </Navbar.Brand>
+          
+          <Col md="auto">
+                      <Nav>
+                          <Nav.Link href="#blog/index">Blog</Nav.Link>
+                          <Nav.Link href="#home">Dank memes</Nav.Link>
+                      </Nav>
+                  <Button>Get in Touch </Button>
+          </Col>
+              </Container>
           </Navbar>
-           */}
+            */}
+
           
         <Flex>
           <div>
